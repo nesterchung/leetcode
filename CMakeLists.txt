@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.5)
 
 set(CMAKE_BUILD_TYPE Debug)
+set (CMAKE_C_STANDARD 11)
+
 file(GLOB SRC RELATIVE "${CMAKE_SOURCE_DIR}" "*.c")
 
 foreach( target_file ${SRC} )
